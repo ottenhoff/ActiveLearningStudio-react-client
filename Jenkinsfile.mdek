@@ -13,7 +13,7 @@ node('currikimdek') {
     }
     stage('Build') {
         nodejs('nodejs') {
-            sh 'cp /root/envs/.env.local.mdek .env.local'
+            sh 'cp /home/curriki/envs/.env.local.mdek .env.local'
             sh 'npm run build'
             echo "Build completed"
         }
