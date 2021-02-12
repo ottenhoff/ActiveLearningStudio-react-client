@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
 
 import bg from 'assets/images/loginbg.png';
 import bg1 from 'assets/images/loginbg2.png';
-import logo from 'assets/images/logo.svg';
+import logo from 'assets/images/missi-logo.jpg';
 import loader from 'assets/images/loader.svg';
 import { registerAction, loadOrganizationTypesAction } from 'store/actions/auth';
 import { getErrors } from 'utils';
@@ -25,8 +25,8 @@ class RegisterPage extends React.Component {
       lastName: '',
       email: '',
       password: '',
-      organizationName: '',
-      organizationType: '',
+      organizationName: 'MISSISSIPPI',
+      organizationType: 'K-12',
       jobTitle: '',
       error: null,
     };
@@ -135,12 +135,12 @@ class RegisterPage extends React.Component {
       lastName,
       email,
       password,
-      organizationName,
+      // organizationName,
       jobTitle,
       error,
-      organizationType,
+      // organizationType,
     } = this.state;
-    const { isLoading, organizationTypes } = this.props;
+    const { isLoading } = this.props;
 
     return (
       <div className="auth-page">
@@ -229,7 +229,7 @@ class RegisterPage extends React.Component {
               />
             </div>
 
-            <div className="form-group ">
+            {/* <div className="form-group ">
               <FontAwesomeIcon icon="building" />
               <select
                 className="input-box organization-type"
@@ -244,10 +244,10 @@ class RegisterPage extends React.Component {
                   <option value={type.label}>{type.label}</option>
                 ))}
               </select>
-            </div>
+            </div> */}
 
             <div className="form-group d-flex">
-              <div className="input-wrapper">
+              {/* <div className="input-wrapper">
                 <FontAwesomeIcon icon="building" />
                 <input
                   className="input-box"
@@ -257,9 +257,9 @@ class RegisterPage extends React.Component {
                   value={organizationName}
                   onChange={this.onChangeField}
                 />
-              </div>
+              </div> */}
 
-              <div className="input-wrapper">
+              <div className="input-wrapper" style={{ marginLeft: '0' }}>
                 <FontAwesomeIcon icon="briefcase" />
                 <input
                   className="input-box"
@@ -300,7 +300,7 @@ class RegisterPage extends React.Component {
 RegisterPage.propTypes = {
   history: PropTypes.object.isRequired,
   isLoading: PropTypes.bool.isRequired,
-  organizationTypes: PropTypes.array.isRequired,
+  // organizationTypes: PropTypes.array.isRequired,
   register: PropTypes.func.isRequired,
   loadOrganizationTypes: PropTypes.func.isRequired,
 };

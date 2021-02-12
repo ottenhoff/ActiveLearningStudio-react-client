@@ -307,9 +307,12 @@
 
 .tophd_left {
   // padding: 15px 0;
+  .top_logo {
+    padding-left: 0px;
+  }
   img {
 
-    width: 170px;
+    width: 140px !important;
 
   }
 }
