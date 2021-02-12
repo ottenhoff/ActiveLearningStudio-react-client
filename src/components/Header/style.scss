@@ -308,8 +308,10 @@
 .tophd_left {
   // padding: 15px 0;
   img {
-
-    width: 170px;
+    background: #205a9c;
+    border-radius: 10px;
+    padding: 3px 0px;
+    width: 135px  !important;
 
   }
 }
