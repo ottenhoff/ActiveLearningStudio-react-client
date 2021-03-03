@@ -28,7 +28,7 @@ function App(props) {
       dispatch(updatedProject(userDetails.id));
       dispatch(updatedPlaylist(userDetails.id));
       dispatch(updatedActivity(userDetails.id));
-      if (window.location.href.includes('/org/')) {
+      if (window.location.href.includes('/org/org1-')) {
         if (window.location.pathname.split('/org/')[1].split('/').length === 1) {
           const subDomain = window.location.pathname.split('/org/')[1]?.replaceAll('/', '');
           (async () => {
@@ -42,7 +42,7 @@ function App(props) {
             dispatch(getOrganizationFirstTime(organization?.id));
           })();
         }
-      } else if (window.location.pathname.split('/login/')) {
+      } else if (window.location.pathname.split('/login/org12-')) {
         const subDomain = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
         (async () => {
           const { organization } = await dispatch(getBranding(subDomain));
@@ -53,7 +53,7 @@ function App(props) {
   }, [dispatch, userDetails]);
 
   useEffect(() => {
-    if (window.location.href.includes('/login') && !userDetails) {
+    if (window.location.href.includes('/login/org123') && !userDetails) {
       const subDomain = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
       if (subDomain.includes('login')) {
         dispatch(getBranding('currikistudio'));

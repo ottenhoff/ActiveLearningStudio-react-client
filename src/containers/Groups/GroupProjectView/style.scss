@@ -1,4 +1,4 @@
-$selected_color: #084892;
+$selected_color: $fun-blue-1;
 $filled: #44ca92;
 
 .group-information {
@@ -113,8 +113,8 @@ $filled: #44ca92;
                   //margin-left: -4px;
 
                   &:hover {
-                    background: #5952c6;
-                    border-color: #5952c6;
+                    background: #6b8f63;
+                    border-color: #6b8f63;
                     color: #ffffff;
                   }
                 }

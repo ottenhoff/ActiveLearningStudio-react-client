@@ -445,11 +445,11 @@ export const ProjectsPage = (props) => {
               </Tab>
               <Tab eventKey="Sample Projects" title="Sample Projects">
                 <div className="row">
-                  <div className="col-md-12">
+                  <div className="col-md-12" style={{ display: 'none' }}>
                     <div className="program-page-title">
-                      <h1>Sample Projects</h1>
+                      {/* <h1>Sample Projects</h1> */}
 
-                      {showSampleSort && (
+                      {false && showSampleSort && (
                         <div className="project-page-settings">
                           <div className="sort-project-btns">
                             <div
@@ -500,10 +500,10 @@ export const ProjectsPage = (props) => {
 
               <Tab eventKey="Favorite Projects" title="Favorite Projects">
                 <div className="row">
-                  <div className="col-md-12">
+                  <div className="col-md-12" style={{ display: 'none' }}>
                     <div className="program-page-title">
-                      <h1>Favorite Projects</h1>
-                      {showSampleSort && (
+                      {/* <h1>Favorite Projects</h1> */}
+                      {false && showSampleSort && (
                         <div className="project-page-settings">
                           <div className="sort-project-btns">
                             <div

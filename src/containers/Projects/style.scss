@@ -43,10 +43,10 @@
       margin-top: 10px;
 
       a {
-        font-family: $rubik, sans-serif;
+        font-family: $oracle, sans-serif;
         font-size: 20px;
         font-weight: 300;
-        color: #607a9b;
+        color: #232323;
         word-break: break-word;
         line-height: 120%;
         display: block;
@@ -149,14 +149,14 @@
       font-size: 14px;
       font-weight: 400;
       text-align: center;
-      color: #5952c6;
+      color: #6b8f63;
       letter-spacing: 0;
       opacity: 1;
       background-color: #fff;
 
       &:hover {
-        background-color: #5952c6;
-        color: #fff;
+        background-color: #6b8f63;
+        color: #fff  !important;
         text-decoration: none;
       }
     }
@@ -179,10 +179,10 @@
     padding-left: 40px;
     padding-bottom: 10px;
     background: url(../../assets/images/my-projects-icon.png) no-repeat 0 9px;
-    font-family: $rubik, sans-serif;
+    font-family: $oracle, sans-serif;
     font-weight: 700;
     font-size: 22px;
-    color: #607a9b;
+    color: #232323;
   }
 
   .btn-top-page {
@@ -194,7 +194,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5952c6;
+    background-color: #6b8f63;
     border-radius: 20px;
     font-size: 14px;
     text-align: center;
@@ -228,7 +228,7 @@
   .title {
     font-weight: 500;
     font-size: 31.25px;
-    color: $fun-blue-1;
+    color: #000;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -237,6 +237,9 @@
     img {
       width:35px;
       margin-right: 5px;
+    }
+    svg {
+      color: #eea357
     }
   }
 

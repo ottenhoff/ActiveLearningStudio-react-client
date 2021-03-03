@@ -14,7 +14,7 @@
   }
 
   ::placeholder {
-    color: #607a9b;
+    color: #232323;
   }
 
   .modal .modal-dialog {
@@ -36,8 +36,8 @@
 
     .add-playlist-btn {
       padding: 5px 22px;
-      background: #2ecf43;
-      border-color: #2ecf43;
+      background: $fun-blue-1;
+      border-color: $fun-blue-1;
       font-weight: 600;
       color: #fff;
       text-transform: uppercase;

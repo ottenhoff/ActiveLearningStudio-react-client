@@ -2,14 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import foldericon from 'assets/images/sidebar/folder-icon.png';
-
 export default function Headline() {
   return (
     <div className="project-headline">
       <div className="title">
         <div>
-          <img src={foldericon} alt="" />
+          <FontAwesomeIcon icon="folder" className="mr-2" />
           Projects
         </div>
         <Link to="/project/create">

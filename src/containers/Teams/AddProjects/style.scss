@@ -9,10 +9,10 @@
     margin-bottom: 15px;
     padding-top: 11px;
     padding-bottom: 10px;
-    font-family: $rubik, sans-serif;
+    font-family: $oracle, sans-serif;
     font-weight: 700;
     font-size: 20px;
-    color: #084892;
+    color: $fun-blue-1;
   }
 
   .assign-projects-content {
@@ -68,7 +68,7 @@
   width: 94px;
   height: 40px;
   /* margin-left: 9px; */
-  background: #2ecf43;
+  background: $fun-blue-1;
   border: 0;
   border-radius: 3px;
   box-shadow: none;
@@ -90,7 +90,7 @@
   height: 40px;
   margin-top: 20px;
   padding-left: 32px;
-  background: url(../../../assets/images/btn-arrow.png) #2ecf43 no-repeat right 23px top 13px;
+  background: url(../../../assets/images/btn-arrow.png) $fun-blue-1 no-repeat right 23px top 13px;
   border: 0;
   border-radius: 3px;
   box-shadow: none;

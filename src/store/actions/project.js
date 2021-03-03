@@ -249,7 +249,7 @@ export const toggleProjectShareRemovedAction = (projectId, projectName) => async
 export const deleteFavObj = (projectId) => async (dispatch) => {
   Swal.fire({
     showCancelButton: true,
-    confirmButtonColor: '#5952c6',
+    confirmButtonColor: '#6b8f63',
     cancelButtonColor: '#d33',
     confirmButtonText: 'Delete',
     title: 'Are you sure you want to remove this ?',
@@ -271,7 +271,7 @@ export const addProjectFav = (projectId) => async (/* dispatch */) => {
   if (project.message) {
     Swal.fire({
       showCancelButton: true,
-      confirmButtonColor: '#5952c6',
+      confirmButtonColor: '#6b8f63',
       cancelButtonColor: '#d33',
       confirmButtonText: 'My Favorites Projects',
       icon: 'success',
@@ -368,7 +368,7 @@ export const ShareLMS = (
     title: `This playlist will be added to course <strong>${projectName}</strong>. If the course does not exist, it will be created. `,
     text: 'Would you like to proceed?',
     showCancelButton: true,
-    confirmButtonColor: '#5952c6',
+    confirmButtonColor: '#6b8f63',
     cancelButtonColor: '#d33',
     confirmButtonText: 'Continue',
   }).then((result) => {
@@ -399,7 +399,7 @@ export const ShareLMS = (
             Swal.fire({
               icon: 'success',
               title: 'Published!',
-              confirmButtonColor: '#5952c6',
+              confirmButtonColor: '#6b8f63',
               html: `Your playlist has been published to <a target="_blank" href="${lmsUrl}"> ${lmsUrl}</a>`,
               //   text: `Your playlist has been submitted to ${lmsUrl}`,
             });
@@ -407,7 +407,7 @@ export const ShareLMS = (
         })
         .catch(() => {
           Swal.fire({
-            confirmButtonColor: '#5952c6',
+            confirmButtonColor: '#6b8f63',
             icon: 'error',
             text: 'Something went wrong, Kindly try again',
           });
@@ -444,7 +444,7 @@ export const getProjectCourseFromLMS = (
       title: `This Project will be added to ${lms}. If the Project does not exist, it will be created.`,
       text: 'Would you like to proceed?',
       showCancelButton: true,
-      confirmButtonColor: '#5952c6',
+      confirmButtonColor: '#6b8f63',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Continue',
     }).then((result) => {
@@ -475,7 +475,7 @@ export const getProjectCourseFromLMS = (
               Swal.fire({
                 icon: 'success',
                 title: 'Published!',
-                confirmButtonColor: '#5952c6',
+                confirmButtonColor: '#6b8f63',
                 html: `Your Project has been published to <a target="_blank" href="${lmsUrl}">${lmsUrl}</a>`,
                 // text: `Your playlist has been submitted to ${lmsUrl}`,
               });
@@ -488,7 +488,7 @@ export const getProjectCourseFromLMS = (
           Swal.fire({
             icon: 'warning',
             title: 'No playlist available',
-            confirmButtonColor: '#5952c6',
+            confirmButtonColor: '#6b8f63',
           });
         }
       }
@@ -529,7 +529,7 @@ export const getProjectCourseFromLMSPlaylist = (
       title: `This Playlist will be added to ${lms}. If the Playlist does not exist, it will be created. `,
       text: 'Would you like to proceed?',
       showCancelButton: true,
-      confirmButtonColor: '#5952c6',
+      confirmButtonColor: '#6b8f63',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Continue',
     }).then(async (result) => {
@@ -559,7 +559,7 @@ export const getProjectCourseFromLMSPlaylist = (
         Swal.fire({
           icon: 'success',
           title: 'Published!',
-          confirmButtonColor: '#5952c6',
+          confirmButtonColor: '#6b8f63',
           html: `Your Project has been published to <a target="_blank" href="${lmsUrl}">${lmsUrl}</a>`,
           // text: `Your playlist has been submitted to ${lmsUrl}`,
         });

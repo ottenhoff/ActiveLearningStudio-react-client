@@ -65,7 +65,7 @@ const ProjectCard = (props) => {
                   </p>
                   {project.shared && (
                     <div className="row">
-                      <div className="col-md-12 text-right">
+                      <div className="col-md-12">
                         <Badge pill variant="success">
                           Shared
                         </Badge>
@@ -79,13 +79,13 @@ const ProjectCard = (props) => {
 
           <div className="button-bottom">
             <Link to={`/project/${project.id}/preview`}>
-              <FontAwesomeIcon icon="plus" className="mr-2" />
-              Add Playlist
+              <FontAwesomeIcon icon="eye" className="mr-2" />
+              Preview
             </Link>
 
             <Link to={`/project/${project.id}`}>
-              <FontAwesomeIcon icon="share" className="mr-2" />
-              share
+              <FontAwesomeIcon icon="cubes" className="mr-2" />
+              Build
             </Link>
 
             <Link>

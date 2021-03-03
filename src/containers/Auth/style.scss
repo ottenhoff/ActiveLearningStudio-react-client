@@ -180,7 +180,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 26px;
-        font-family: '$halvetica', sans-serif;
+        font-family: $halvetica, sans-serif;
         letter-spacing: 0;
         color: $mine-shaft !important;
         opacity: 0.8;
@@ -236,7 +236,7 @@
 
       a {
         color: #9b9b9b;
-        font-family: '$halvetica', sans-serif;
+        font-family: $halvetica, sans-serif;
         font-weight: 400;
       }
     }
@@ -267,7 +267,7 @@
       p {
         font-size: 16px;
         color: #000;
-        font-family: '$halvetica', sans-serif;
+        font-family: $halvetica, sans-serif;
         font-weight: 400;
 
         a {
@@ -300,7 +300,7 @@
       a {
         color: $curriki-main-blue;
         font-weight: bold;
-        font-family: $rubik, sans-serif;
+        font-family: $oracle, sans-serif;
         text-decoration: underline !important;
         font-size: 13px;
         cursor: pointer;

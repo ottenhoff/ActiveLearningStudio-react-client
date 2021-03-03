@@ -39,7 +39,7 @@ function DashboardPage(props) {
     {
       name: 'Free',
       value: metrics.total_storage - metrics.used_storage,
-      color: '#607a9b',
+      color: '#232323',
     },
   ];
 
@@ -52,7 +52,7 @@ function DashboardPage(props) {
     {
       name: 'Free',
       value: (metrics.total_bandwidth === 0) ? 1 : (metrics.total_bandwidth - metrics.used_bandwidth),
-      color: '#607a9b',
+      color: '#232323',
     },
   ];
 

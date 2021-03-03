@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
-import bell from 'assets/images/bell.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { getAllNotifications, clearAllNotification } from 'store/actions/notification';
 import NotificationArea from 'containers/Notification/NotificationArea';
@@ -36,7 +36,7 @@ function HeaderNotification() {
       <Dropdown>
         <Dropdown.Toggle className="d-flex align-items-center">
           <div className="notification-alert" onClick={() => dispatch(clearAllNotification())}>
-            <img src={bell} alt="notification" />
+            <FontAwesomeIcon icon="bell" />
             <p className="header-icon-text">Notifications</p>
             {allNotifications.notificationAlert > 0 && <div className="alert-added" />}
           </div>

@@ -4,9 +4,9 @@ import { Link, withRouter } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import foldericon from 'assets/images/sidebar/folder-icon.png';
-import teamicon from 'assets/images/sidebar/team-icon.png';
-import dashboardicon from 'assets/images/sidebar/dashboard-icon.png';
+// import foldericon from 'assets/images/sidebar/folder-icon.png';
+// // import teamicon from 'assets/images/sidebar/team-icon.png';
+// import dashboardicon from 'assets/images/sidebar/dashboard-icon.png';
 import backgroundimg from 'assets/images/sidebar/background.png';
 
 import {
@@ -62,7 +62,7 @@ function Sidebar(props) {
     <aside className="sidebar-all">
       <Link to="/">
         <div className="menu-title">
-          <img src={foldericon} alt="" />
+          <FontAwesomeIcon icon="folder" className="mr-2" />
           My Projects
         </div>
       </Link>
@@ -85,12 +85,12 @@ function Sidebar(props) {
 
       <Link to="/dashboard">
         <div className="menu-title">
-          <img src={dashboardicon} alt="" />
+          <FontAwesomeIcon icon="tachometer-alt" className="mr-2" />
           Dashboard & Stats
         </div>
       </Link>
 
-      <Link to="/teams">
+      {/* <Link to="/teams">
         <div className="menu-title">
           <img src={teamicon} alt="" />
           Teams
@@ -117,7 +117,7 @@ function Sidebar(props) {
             Create Group
           </div>
         </Link>
-      </div>
+      </div> */}
       {false && allState.team.teams.map((team) => (
         <div key={team.id} className={`team-item${selectedTeam === team.id ? '' : ' collapsed'}`}>
           <div className="team-label" onClick={() => handleClickTeam(team)}>

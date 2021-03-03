@@ -3,10 +3,10 @@
 .resource-modal {
   h1 {
     margin: 0;
-    font-family: $rubik, sans-serif;
+    font-family: $oracle, sans-serif;
     font-size: 2rem;
     font-weight: 300;
-    color: #165399;
+    color: #000;
     text-transform: capitalize;
 
     .close-btn {
@@ -42,7 +42,7 @@
 
   h1 {
     margin: 0;
-    font-family: $rubik, sans-serif;
+    font-family: $oracle, sans-serif;
     font-size: 2rem;
     font-weight: 300;
     color: #165399;
@@ -55,7 +55,7 @@
       margin-bottom: 15px;
       font-family: $halvetica, sans-serif;
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 600;
       color: #565656;
     }
 
@@ -104,7 +104,7 @@
           display: block;
           float: right;
           background: #d9dfe8;
-          font-family: $rubik, sans-serif;
+          font-family: $oracle, sans-serif;
           font-size: 12px;
           font-weight: 600;
           color: #000;
@@ -130,10 +130,10 @@
 
       .create-project-submit-btn {
         padding: 10px 15px;
-        background: #2ecf43;
+        background: $fun-blue-1;
         border: 0;
         border-radius: 5px;
-        font-family: $rubik, sans-serif;
+        font-family: $oracle, sans-serif;
         font-weight: 500;
         color: #fff;
         text-transform: uppercase;
@@ -146,7 +146,7 @@
         background: url(../../../assets/images/project-template-icon.png) #fff no-repeat 8px 10px;
         border: 1px solid #d9dfe8;
         border-radius: 5px;
-        font-family: $rubik, sans-serif;
+        font-family: $oracle, sans-serif;
         font-weight: 500;
         text-transform: uppercase;
         cursor: pointer;

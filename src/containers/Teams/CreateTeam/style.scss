@@ -51,7 +51,7 @@
   width: 94px;
   height: 40px;
   /* margin-left: 9px; */
-  background: #2ecf43;
+  background: $fun-blue-1;
   border: 0;
   border-radius: 3px;
   box-shadow: none;
@@ -73,7 +73,7 @@
   height: 40px;
   margin-top: 20px;
   padding-left: 32px;
-  background: url(../../../assets/images/btn-arrow.png) #2ecf43 no-repeat right 23px top 13px;
+  background: url(../../../assets/images/btn-arrow.png) $fun-blue-1 no-repeat right 23px top 13px;
   border: 0;
   border-radius: 3px;
   box-shadow: none;
@@ -94,8 +94,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #084892;
-  border-color: #084892;
+  background: $fun-blue-1;
+  border-color: $fun-blue-1;
   border-radius: 20px;
   font-size: 14px;
   text-align: center;
@@ -104,7 +104,7 @@
 
   .fa {
     margin-right: 5px;
-    -webkit-text-stroke: 1px #084892;
+    -webkit-text-stroke: 1px $fun-blue-1;
   }
 
   &:disabled {

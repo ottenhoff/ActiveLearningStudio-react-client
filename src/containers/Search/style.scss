@@ -38,7 +38,7 @@
     .card-header {
       background-color: #fff;
       text-align: left;
-      font: normal normal 600 16px/20px $rubik;
+      font: normal normal 600 16px/20px $oracle;
       letter-spacing: 0;
       color: $curriki-main-blue;
       opacity: 1;
@@ -81,7 +81,7 @@
         padding: 10px;
         height: 36px;
         text-align: left;
-        font: normal normal normal 14px/26px $rubik;
+        font: normal normal normal 14px/26px $oracle;
         letter-spacing: 0;
         color: $mine-shaft;
         margin-bottom: 10px;
@@ -89,7 +89,7 @@
 
       .check-box-search {
         text-align: left;
-        font: normal normal normal 14px/26px $rubik;
+        font: normal normal normal 14px/26px $oracle;
         letter-spacing: 0;
         color: $mine-shaft;
         opacity: 1;
@@ -102,12 +102,12 @@
 
       .src-btn {
         background: #ffffff 0% 0% no-repeat padding-box;
-        border: 2px solid #5952c6;
+        border: 2px solid #6b8f63;
         border-radius: 2px;
         text-align: center;
-        font: normal normal 600 16px/20px $rubik;
+        font: normal normal 600 16px/20px $oracle;
         letter-spacing: 0;
-        color: #5952c6;
+        color: #6b8f63;
         opacity: 1;
         height: 34px;
         display: flex;
@@ -117,7 +117,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #5952c6;
+          background-color: #6b8f63;
           color: #fff;
         }
       }
@@ -129,7 +129,7 @@
 
     .headline {
       text-align: left;
-      font: normal normal bold 16px/20px $rubik;
+      font: normal normal bold 16px/20px $oracle;
       letter-spacing: 0;
       color: #ffffff;
       opacity: 1;
@@ -149,7 +149,7 @@
         background: #ffffff 0% 0% no-repeat padding-box;
         box-shadow: 0 0 2px #0000000d;
         opacity: 1;
-        font: normal normal 600 14px/20px $rubik;
+        font: normal normal 600 14px/20px $oracle;
         letter-spacing: 0;
         cursor: pointer;
       }
@@ -169,7 +169,7 @@
       box-shadow: 0 0 2px #0000000d;
       opacity: 1;
       text-align: left;
-      font: normal normal 600 16px/20px $rubik;
+      font: normal normal 600 16px/20px $oracle;
       letter-spacing: 0;
       color: $curriki-main-blue;
       border: none;
@@ -201,7 +201,7 @@
 
       a {
         text-align: left;
-        font: normal normal normal 14px/26px $rubik;
+        font: normal normal normal 14px/26px $oracle;
         letter-spacing: 0;
         color: $mine-shaft;
         opacity: 1;
@@ -230,7 +230,7 @@
 
         h2 {
           text-align: left;
-          font: normal normal 600 16px/22px $rubik;
+          font: normal normal 600 16px/22px $oracle;
           letter-spacing: 0;
           color: $curriki-main-blue;
           text-transform: capitalize;
@@ -244,14 +244,14 @@
           li {
             margin-right: 30px;
             text-align: left;
-            font: normal normal normal 14px/26px $rubik;
+            font: normal normal normal 14px/26px $oracle;
             letter-spacing: 0;
             opacity: 1;
             list-style-type: disc;
 
             span {
               text-align: left;
-              font: normal normal normal 14px/26px $rubik;
+              font: normal normal normal 14px/26px $oracle;
               letter-spacing: 0;
               color: $curriki-main-blue;
             }
@@ -260,7 +260,7 @@
 
         p {
           text-align: left;
-          font: normal normal normal 14px/22px $rubik;
+          font: normal normal normal 14px/22px $oracle;
           letter-spacing: 0;
           opacity: 1;
         }
@@ -343,8 +343,8 @@
 .clone-lti {
   .modal-title {
     text-align: left;
-    font: normal normal 400 18px/24px $rubik;
-    color: #084892;
+    font: normal normal 400 18px/24px $oracle;
+    color: $fun-blue-1;
   }
 
   .modal-body {
@@ -365,11 +365,11 @@
      margin:20px;
 
     .button-submit{
-      background: #5952C6 0% 0% no-repeat padding-box;
+      background: #6b8f63 0% 0% no-repeat padding-box;
       border-radius: 30px;
       width: 98px;
       height: 40px;
-      font: normal normal normal 15px/20px $rubik;
+      font: normal normal normal 15px/20px $oracle;
       letter-spacing: 0;
       color: #FFFFFF;
       border:none
@@ -391,7 +391,7 @@
     flex-direction: column;
 
     p{
-      font: normal normal normal 14px/22px $rubik;
+      font: normal normal normal 14px/22px $oracle;
       color: $mine-shaft;
     }
 
@@ -403,13 +403,13 @@
       padding: 10px 20px;
 
       h2{
-        font: 400 14px/20px $rubik;
-        color: #084892;
+        font: 400 14px/20px $oracle;
+        color: $fun-blue-1;
         padding: 10px 0;
       }
 
       h3{
-        font: 400 12px/26px $rubik;
+        font: 400 12px/26px $oracle;
         color: $mine-shaft;
         border-top: 1px solid #E6E6E6;
         padding: 10px 0;
@@ -439,7 +439,7 @@
   }
 
   .top-card.card-header {
-    background-color: #084892;
+    background-color: $fun-blue-1;
 
     span {
       color: #fff;
@@ -465,7 +465,7 @@
 
       svg {
         margin-right: 10px;
-        color: #084892;
+        color: $fun-blue-1;
       }
     }
 
@@ -490,7 +490,7 @@
     background-color: #fff;
 
     &:hover {
-      color: #084892;
+      color: $fun-blue-1;
     }
   }
 }

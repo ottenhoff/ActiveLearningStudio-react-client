@@ -7,7 +7,7 @@ body {
   background-color: #eee;
   font-size: 14px;
   color: #777;
-  font-family: $rubik !important;
+  font-family: $oracle !important;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,23 +23,25 @@ code {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
   height: 7px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #fff;
+  border-radius: 12px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #d6d6d6;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  // background: #555;
   cursor: pointer;
 }
 
@@ -243,8 +245,12 @@ code {
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
-        color: $fun-blue-1;
+        color: #000;
         align-items: center;
+        
+        svg {
+          color: #eea357;
+        }
       }
 
       .dropdown-menu a {

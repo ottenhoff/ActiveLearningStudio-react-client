@@ -82,6 +82,9 @@
   box-sizing: border-box;
   vertical-align: top;
   white-space: nowrap;
+  box-shadow: 0 2px 6px 0 #b1b1b1;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  
 }
 
 .list {
@@ -94,27 +97,28 @@
   border-radius: 3px;
   box-sizing: border-box;
   white-space: normal;
+  background: #F2F2F2;
 }
 
 .list-header {
   position: relative;
   min-height: 20px;
   flex: 0 0 auto;
+  background-image: url('../../assets/images/dataTexture_10e.jpg');
 }
 
 .list-body {
   max-height: 400px;
   min-height: 230px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: #f4f8fc;
+  margin: 10px;
+  // background: #f4f8fc;
   overflow-y: auto;
 
   .playlist-resource {
     margin: 15px;
     padding: 15px;
     background: #ffffff 0 0 no-repeat padding-box;
-    border-left: 2px solid #084892;
+    border-left: 2px solid $fun-blue-1;
     border-radius: 2px;
     box-shadow: 1px 1px 2px #7e7e7e1a;
     opacity: 1;
@@ -250,6 +254,7 @@
     .fa {
       padding-right: 3px;
       font-size: 12px;
+      color: #eea357
     }
 
     a {
@@ -262,12 +267,12 @@
       font-size: 14px;
       font-weight: 400;
       text-align: center;
-      color: #5952c6;
+      color: #6b8f63;
       letter-spacing: 0;
       opacity: 1;
 
       &:hover {
-        background-color: #5952c6;
+        background-color: #6b8f63;
         color: #fff;
         text-decoration: none;
       }
@@ -311,7 +316,7 @@
       margin-top: 10px;
 
       a {
-        font-family: $rubik, sans-serif;
+        font-family: $oracle, sans-serif;
         font-size: 20px;
         font-weight: 300;
         color: $fun-blue-1;
@@ -449,10 +454,10 @@
     padding-bottom: 10px;
     padding-left: 40px;
     background: url(../../assets/images/my-projects-icon.png) no-repeat 0 9px;
-    font-family: $rubik, sans-serif;
+    font-family: $oracle, sans-serif;
     font-weight: 700;
     font-size: 22px;
-    color: #607a9b;
+    color: #232323;
   }
 
   .btn-top-page {
@@ -464,7 +469,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5952c6;
+    background-color: #6b8f63;
     border-radius: 20px;
     font-size: 14px;
     color: #fff;
@@ -492,7 +497,7 @@
     justify-content: center;
     align-items: center;
     float: right;
-    background-color: #5952c6;
+    background-color: #6b8f63;
     border-radius: 20px;
     font-size: 14px;
     text-align: center;
@@ -526,7 +531,7 @@
   }
 
   .nav-item.active {
-    background-color: #6e6d6d !important;
+    background-color: $fun-blue-1 !important;
     color: #fff !important;
 
     &:after {
@@ -538,8 +543,8 @@
       height: 0;
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
-      border-top: 10px solid #6e6d6d;
-      border-bottom-color: #6e6d6d;
+      border-top: 10px solid $fun-blue-1;
+      border-bottom-color: $fun-blue-1;
       transform: translate(-50%);
     }
   }
@@ -547,7 +552,7 @@
 
 .main-content-wrapper {
   width: 100%;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 45px;
   // display: flex;
   float: left;
@@ -561,7 +566,10 @@
     float: left;
     background: #fff;
     border-right: 1px solid #dcdcdc;
+    background: url('../../assets/images/bg-pattern-1.png');
+    background-color: #312d2a;
     overflow-y: auto;
+    padding-top: 25px;
 
     //.collapse-button {
     //  position: absolute;
@@ -882,36 +890,36 @@ ul {
   border-bottom: 1px solid #3a466d;
   font-size: 16px;
   color: #7b7b7b;
-  font-family: $rubik, sans-serif;
+  font-family: $oracle, sans-serif;
 }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #7b7b7b;
-  font-family: $rubik, sans-serif;
+  font-family: $oracle, sans-serif;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #7b7b7b;
-  font-family: $rubik, sans-serif;
+  font-family: $oracle, sans-serif;
 }
 
 :-ms-input-placeholder {
   /* IE 10+ */
   color: #7b7b7b;
-  font-family: $rubik, sans-serif;
+  font-family: $oracle, sans-serif;
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
   color: #7b7b7b;
-  font-family: $rubik, sans-serif;
+  font-family: $oracle, sans-serif;
 }
 
 body {
   background: #eeeeee;
-  font-family: $rubik, sans-serif;
+  font-family: $oracle, sans-serif;
   font-weight: normal;
   font-size: 16px;
   position: relative;
@@ -956,7 +964,7 @@ body {
 .top-header {
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 60px;
   box-shadow: 0 5px 6px #00000026;
   z-index: 111;
   justify-content: space-between;
@@ -985,7 +993,7 @@ body {
 }
 
 .top-info li {
-  padding: 0 5px;
+  // padding: 0 5px;
 }
 
 .top-info > li:first-child > a {
@@ -1120,8 +1128,8 @@ nav ul li {
 
 nav ul li a {
   font-size: 16px;
-  color: #607a9b;
-  font-family: $rubik, sans-serif;
+  color: #232323;
+  font-family: $oracle, sans-serif;
   line-height: 100%;
   transition: all 0.5s linear;
 }
@@ -1132,7 +1140,7 @@ nav ul li:not(:last-child) {
 
 nav ul li i {
   font-size: 13px;
-  color: #607a9b;
+  color: #232323;
   padding-right: 10px;
 }
 
@@ -1307,7 +1315,7 @@ header {
 
 .notify-icon i {
   font-size: 32px;
-  color: #607a9b;
+  color: #232323;
 }
 
 .clearfix:before,
@@ -1382,7 +1390,7 @@ header.head_mobile {
 .title-md {
   font-size: 22px;
   color: #21448e;
-  font-family: $rubik, sans-serif;
+  font-family: $oracle, sans-serif;
   font-weight: 600;
   line-height: 100%;
   padding-bottom: 18px;
@@ -1437,7 +1445,7 @@ header.head_mobile {
 }
 
 .drp-heading {
-  color: #607a9b;
+  color: #232323;
   font-size: 26px;
 }
 
@@ -1541,6 +1549,20 @@ a:hover {
 
   .top_logo {
     padding-left: 0;
+    display: flex;
+    align-items: center;
+    
+    .logo-text {
+      font-size: 15px;
+      font-weight: 400;
+      color: $fun-blue-1;
+      padding: 0px 6px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
   }
 
   .header_mobilxs {
@@ -1763,7 +1785,9 @@ a:hover {
   }
 
   .top-info.flex-div li:nth-child(4) {
-    order: 3;
+    order: 3;width: auto;
+    height: 35px;
+    margin-top: 5px;
   }
 }
 
@@ -1885,7 +1909,7 @@ a:hover {
   }
 
   button {
-    background: #5952c6 0 0 no-repeat padding-box;
+    background: #6b8f63 0 0 no-repeat padding-box;
     border-radius: 30px;
     width: 201px;
     height: 40px;
@@ -1905,7 +1929,7 @@ a:hover {
     }
 
     &:hover {
-      background: #5952c6 0 0 no-repeat padding-box;
+      background: #6b8f63 0 0 no-repeat padding-box;
     }
   }
 
@@ -2051,7 +2075,7 @@ a:hover {
 }
 
 .user-name-login {
-  color: #5952c6;
+  color: #6b8f63;
   font-weight: bold;
 }
 
@@ -2114,7 +2138,7 @@ a:hover {
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 0;
-    color: #5952c6;
+    color: #6b8f63;
     opacity: 1;
 
     i {
@@ -2169,7 +2193,7 @@ a:hover {
 
 .back-header .go-back-button-preview,
 .sce_cont .go-back-button-preview {
-  background-color: #5952c6;
+  background-color: #6b8f63;
   display: block;
   color: #fff;
   width: fit-content;
@@ -2600,7 +2624,7 @@ a:hover {
       opacity: 1;
       border-bottom: none;
       margin: 0 !important;
-      font-family: $rubik, sans-serif;
+      font-family: $oracle, sans-serif;
     }
 
     .slide-control {
@@ -2615,7 +2639,7 @@ a:hover {
       color: #7B7B7B;
       opacity: 1;
       height: auto;
-      font-family: $rubik, sans-serif;
+      font-family: $oracle, sans-serif;
       padding: 12px 12px;
       text-transform: capitalize;
 
@@ -2802,7 +2826,7 @@ a:hover {
   }
 
   .react-switch-handle {
-    border: 1px solid #5952c6 !important;
+    border: 1px solid #6b8f63 !important;
   }
 }
 
@@ -3000,7 +3024,7 @@ a:hover {
     }
 
     button {
-      background-color: #5952c6;
+      background-color: #6b8f63;
       color: #fff;
       width: 150px;
       border-radius: 5px;
@@ -3053,7 +3077,7 @@ a:hover {
   display: flex;
   justify-content: space-around;
   border: 1px solid #ccc;
-  color: #5952c6;
+  color: #6b8f63;
 
   div {
     width: 50%;
@@ -3071,7 +3095,7 @@ a:hover {
 
     &:hover {
       color: #fff;
-      background: #5952c6;
+      background: #6b8f63;
     }
   }
 }
@@ -3235,11 +3259,11 @@ a:hover {
     .option_type {
       width: 50%;
       padding: 5px;
-      color: #084892;
+      color: $fun-blue-1;
       text-transform: capitalize;
 
       &:hover {
-        background-color: #084892;
+        background-color: $fun-blue-1;
         color: #fff;
       }
 
@@ -3344,7 +3368,7 @@ a:hover {
       p {
         font-weight: 300;
         font-size: 14px;
-        color: #084892;
+        color: $fun-blue-1;
       }
     }
   }
@@ -3370,7 +3394,7 @@ a:hover {
 
 .create-project .fa-plus-circle {
   font-size: 30px;
-  color: #084892;
+  color: $fun-blue-1;
 }
 
 .top-header.flex-div .dropdown-toggle {
@@ -3515,7 +3539,7 @@ a:hover {
   }
 
   .box h1 {
-      color: #4472c4;
+      color: #000000;
       font-size: 22px;
       font-weight: 600;
       line-height: 100%;
@@ -3549,7 +3573,7 @@ a:hover {
   }
 
   .box p span {
-      color: #4472c4;
+      color: #000000;
       text-decoration: underline;
   }
 
@@ -3651,7 +3675,7 @@ a:hover {
       min-height: 450px;
       
       h1 {
-        color: #4472c4;
+        color: #000000;
         font-size: 22px;
         font-weight: 600;
         line-height: 100%;

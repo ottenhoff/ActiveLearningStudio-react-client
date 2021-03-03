@@ -55,7 +55,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    color: #084892;
+    color: $fun-blue-1;
 
     &.project-title {
       padding-top: 7px;
@@ -78,7 +78,7 @@
   }
 
   .dashboard-panel-header-row {
-    border-left: solid 5px #084892;
+    border-left: solid 5px $fun-blue-1;
   }
 
   .btn {
@@ -93,7 +93,7 @@
   }
 
   .offer-panel {
-    border: solid 3px #084892;
+    border: solid 3px $fun-blue-1;
   }
 
   .metrics-counters span {
@@ -130,7 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5952c6;
+    background-color: #6b8f63;
     border-radius: 20px;
     font-size: 14px;
     text-align: center;

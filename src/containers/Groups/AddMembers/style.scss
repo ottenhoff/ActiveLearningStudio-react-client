@@ -1,4 +1,4 @@
-$selected_color: #084892;
+$selected_color: $fun-blue-1;
 $filled: #44ca92;
 
 .member-add {
@@ -20,7 +20,7 @@ $filled: #44ca92;
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
       font-size: 20px;
-      color: #084892;
+      color: $fun-blue-1;
     }
 
     .title-cross {
@@ -154,11 +154,11 @@ $filled: #44ca92;
             cursor: pointer;
 
             &.active {
-              background-color: #5952c6;
+              background-color: #6b8f63;
             }
 
             &:hover {
-              background-color: #5952c6;
+              background-color: #6b8f63;
               color: #ffffff;
             }
 
@@ -335,7 +335,7 @@ $filled: #44ca92;
   width: 94px;
   height: 40px;
   /* margin-left: 9px; */
-  background: #2ecf43;
+  background: $fun-blue-1;
   border: 0;
   border-radius: 3px;
   box-shadow: none;

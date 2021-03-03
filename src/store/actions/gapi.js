@@ -76,7 +76,7 @@ export const googleClassRoomLoginFailureAction = (response) => async (dispatch) 
 
   try {
     Swal.fire({
-      confirmButtonColor: '#5952c6',
+      confirmButtonColor: '#6b8f63',
       icon: 'error',
       text: response.error.replace(/_/g, ' '),
     });
