@@ -8,8 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import QueryString from 'query-string';
 
 import loader from 'assets/images/loader.svg';
-import bg from 'assets/images/loginbg.png';
-import bg1 from 'assets/images/loginbg2.png';
 import { resetPasswordAction } from 'store/actions/auth';
 import storageService from 'services/storage.service';
 import { getErrors } from 'utils';
@@ -163,9 +161,6 @@ function ResetPasswordPage(props) {
           </div>
         </form>
       </div>
-
-      <img src={bg} className="bg1" alt="" />
-      <img src={bg1} className="bg2" alt="" />
     </div>
   );
 }

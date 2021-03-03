@@ -5,10 +5,10 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import validator from 'validator';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { GoogleLogin } from 'react-google-login';
+// import { GoogleLogin } from 'react-google-login';
 
-import bg from 'assets/images/loginbg.png';
-import bg1 from 'assets/images/loginbg2.png';
+// import bg from 'assets/images/loginbg.png';
+// import bg1 from 'assets/images/loginbg2.png';
 import loader from 'assets/images/loader.svg';
 import { loginAction, googleLoginAction } from 'store/actions/auth';
 import { getErrors } from 'utils';
@@ -185,11 +185,11 @@ class LoginPage extends React.Component {
                 {isLoading ? (
                   <img src={loader} alt="" />
                 ) : (
-                  'Login'
+                  'Sign in'
                 )}
               </button>
             </div>
-
+            {/*
             <div className="form-group text-center mb-0">
               <GoogleLogin
                 clientId={global.config.gapiClientId}
@@ -201,12 +201,9 @@ class LoginPage extends React.Component {
               >
                 <span>Login with Google</span>
               </GoogleLogin>
-            </div>
+            </div> */}
           </form>
         </div>
-
-        <img src={bg} className="bg1" alt="" />
-        <img src={bg1} className="bg2" alt="" />
       </div>
     );
   }

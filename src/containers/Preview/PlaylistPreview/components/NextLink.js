@@ -42,7 +42,7 @@ function NextLink(props) {
   return (
     <div className="slider-hover-section">
       <Link to={nextLink}>
-        <FontAwesomeIcon icon="chevron-right" />
+        Next
       </Link>
 
       <div className={`hover-control-caption pointer-cursor${nextResource ? '' : ' no-data'}`}>

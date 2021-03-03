@@ -6,8 +6,6 @@ import validator from 'validator';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Swal from 'sweetalert2';
 
-import bg from 'assets/images/loginbg.png';
-import bg1 from 'assets/images/loginbg2.png';
 import loader from 'assets/images/loader.svg';
 import { registerAction, loadOrganizationTypesAction } from 'store/actions/auth';
 import { getErrors } from 'utils';
@@ -289,9 +287,6 @@ class RegisterPage extends React.Component {
             </div>
           </form>
         </div>
-
-        <img src={bg} className="bg1" alt="" />
-        <img src={bg1} className="bg2" alt="" />
       </div>
     );
   }

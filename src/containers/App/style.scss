@@ -1389,7 +1389,7 @@ header.head_mobile {
 
 .title-md {
   font-size: 22px;
-  color: #21448e;
+  color: #000;
   font-family: $oracle, sans-serif;
   font-weight: 600;
   line-height: 100%;
@@ -2210,17 +2210,17 @@ a:hover {
 }
 
 .back-header {
-  min-height: 57px;
-  border-bottom: 1px solid #e3e3e3;
-  border-left: 1px solid #e3e3e3;
-  padding: 13px 35px;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 
   a {
-    background-color: #fff !important;
     margin-bottom: 0 !important;
+  }
+
+  svg {
+    color: #fff !important;
+    font-size: 18px !important;
+    margin-left: 15px;
   }
 
   .dropdown-menu {
@@ -2350,11 +2350,7 @@ a:hover {
 }
 
 .main-page-content.preview {
-  background: #1b2e3d;
-  padding: 30px 15px;
-  z-index: 111;
-  position: relative;
-  height: 100vh;
+  padding: 0;
 
   .line::after {
     content: "";
@@ -2452,6 +2448,7 @@ a:hover {
     padding: 0 !important;
     background-color: #fff;
     //border-bottom: 1px solid #989da1;
+    position: fixed;
     cursor: pointer;
 
     .drpdown {
@@ -2508,10 +2505,15 @@ a:hover {
   .main-item-wrapper {
     position: relative;
     background: #fff;
-    min-height: 443px;
-    max-height: 593px;
+    min-height: 100%;
+    max-height: 100vh;
     overflow-y: auto;
     z-index: 0;
+    margin-top: 50px;
+
+    .item-container {
+      padding-bottom: 50px;
+    }
   }
 
   .slider-scroll-auto {
@@ -2520,9 +2522,10 @@ a:hover {
   }
 
   .flex-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    border-radius: 5px;
+    width: 100%;
+    margin-top: 40px;
+    z-index: 11;
+    border-radius: 0px;
   }
 
   .activity-bg.left-vdo {
@@ -2532,12 +2535,63 @@ a:hover {
     min-height: 500px;
     padding: 0 !important;
     background-color: #fff !important;
+   
+    .vd-controls {
+      position: fixed;
+      z-index: 11;
+      bottom: 0;
+      background-color: #575350;
+      border-top: 1px solid #444;
+      width: 100%;
+      top: unset;
+      right: unset;
+      width: calc(75%);
+      color:#fff
+    }
+    
+
+  }
+
+  .all-laylist-oracle {
+     padding: 20px 5px;
+    .preview-activity-dropdown
+    {
+      position: unset;
+      align-items: center;
+      padding: 0 15px;
+    }
+
+    .resource-dropdown {
+      position: unset;
+
+    }
+
+    li {
+      list-style-type: none;
+      margin-bottom: 7px;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(51,51,51);
+      display: flex;
+      align-items: center;
+
+      &:hover a {
+        text-decoration: none;
+      }
+    }
+    .bg-thumbnail {
+      width: 60px;
+      height: 50px;
+      background-size: cover;
+      margin-right: 10px;
+      background-position: center;
+    }
   }
 
   .right-sidegolf-info {
     width: 40%;
-    max-height: 650px;
-    min-height: 500px;
+    max-height: 100%;
+    min-height: 100%;
     height: 100%;
   }
 
@@ -2555,8 +2609,8 @@ a:hover {
 
     .slider-btn {
       display: flex;
-      width: 80px;
-      justify-content: space-between;
+      width: 100%;
+      justify-content: flex-end;
 
       i {
         border: none;
@@ -2598,10 +2652,25 @@ a:hover {
   .flex-container-preview {
     display: flex;
     justify-content: space-between;
-    background: #FAFAFA;
+    height: 50px;
+    margin: 0;
     padding: 0 20px;
-    border-radius: 5px 0 0;
+    background-color: #575350;
     align-items: center;
+    position: fixed;
+    width: 75%;
+    top: 40px;
+    z-index: 11;
+
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
 
     .dropdown-menu {
       top: 8px !important;
@@ -2673,14 +2742,7 @@ a:hover {
 }
 
 .container-flex-upper {
-  max-width: 1280px;
-  margin: 0 auto 15px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
-  opacity: 0.7;
-  color: #fff;
+ 
 
   .project-title {
     color: #fff;
@@ -2860,7 +2922,7 @@ a:hover {
 
 .slider-hover-section {
   position: relative;
-  padding: 18px 20px;
+  padding: 8px 20px;
   // width: 20px;
 
   // &:hover {
@@ -2877,6 +2939,13 @@ a:hover {
   .hover-control-caption {
     top: 13px;
     left: -125px;
+  }
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
   }
 
   &:hover {

@@ -42,7 +42,7 @@ function PreviousLink(props) {
   return (
     <div className="slider-hover-section">
       <Link to={prevLink}>
-        <FontAwesomeIcon icon="chevron-left" />
+        Previous
       </Link>
 
       <div className={`hover-control-caption pointer-cursor${previousResource ? '' : ' no-data prev'}`}>
