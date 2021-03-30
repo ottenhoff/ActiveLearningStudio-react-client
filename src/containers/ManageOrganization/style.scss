@@ -99,7 +99,7 @@
     button {
       width: 203px;
       height: 32px;
-      background: $fun-blue-1;
+      background: $fun-blue-1 !important;
       border: 1px solid$fun-blue-1;
       box-sizing: border-box;
       border-radius: 50px;
@@ -486,7 +486,7 @@
       }
 
       .cancel-create {
-        background: #E5E5E5;
+        background: #E5E5E5 !important;
         color: $fun-blue-1;
       }
     }
@@ -666,7 +666,7 @@
    }
 
    .cancel-create {
-     background: #E5E5E5;
+     background: #E5E5E5 !important;
      color: $fun-blue-1;
    }
 }
