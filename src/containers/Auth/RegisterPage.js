@@ -25,7 +25,7 @@ class RegisterPage extends React.Component {
       lastName: '',
       email: '',
       password: '',
-      organizationName: 'shepherds',
+      organizationName: 'SNDT',
       organizationType: '',
       jobTitle: '',
       error: null,

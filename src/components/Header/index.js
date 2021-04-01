@@ -13,7 +13,7 @@ import
   //  getOrganizationFirstTime
 }
   from 'store/actions/organization';
-import logo from 'assets/images/shepherds.svg';
+import logo from 'assets/images/sndt.png';
 import add from 'assets/images/add-icon.png';
 import profile from 'assets/images/user-profile.png';
 import searchImg from 'assets/images/search.png';
