@@ -25,7 +25,7 @@ class RegisterPage extends React.Component {
       lastName: '',
       email: '',
       password: '',
-      organizationName: '',
+      organizationName: 'shepherds',
       organizationType: '',
       jobTitle: '',
       error: null,
@@ -136,7 +136,7 @@ class RegisterPage extends React.Component {
       lastName,
       email,
       password,
-      organizationName,
+      // organizationName,
       jobTitle,
       error,
       organizationType,
@@ -248,7 +248,7 @@ class RegisterPage extends React.Component {
             </div>
 
             <div className="form-group d-flex">
-              <div className="input-wrapper">
+              {/* <div className="input-wrapper">
                 <FontAwesomeIcon icon="building" />
                 <input
                   className="input-box"
@@ -258,9 +258,9 @@ class RegisterPage extends React.Component {
                   value={organizationName}
                   onChange={this.onChangeField}
                 />
-              </div>
+              </div> */}
 
-              <div className="input-wrapper">
+              <div className="input-wrapper" style={{ marginLeft: '0' }}>
                 <FontAwesomeIcon icon="briefcase" />
                 <input
                   className="input-box"
