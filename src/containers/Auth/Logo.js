@@ -8,6 +8,6 @@ export default function Logo() {
   return (
     logoState?.id === 1 ? (
       <img src={logo} className="auth-header-logo" alt="" />
-    ) : <img src={global.config.resourceUrl + logoState.image} className="auth-header-logo" alt="" />
+    ) : <img src={global.config.resourceUrl + logoState?.image} className="auth-header-logo" alt="" />
   );
 }
